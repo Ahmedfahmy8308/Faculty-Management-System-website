@@ -53,45 +53,45 @@ The system is developed using **.NET Core MVC** to provide a robust, maintainabl
 ### **Screenshots**
 
 #### Homepage
-![Homepage](website-home-page.jpg)
+![Homepage](Screenshots/website-home-page.jpg)
 
 #### Login
 - **Username & Password**  
-  ![Login with Username](log-in-with-username-pass.jpg)  
+  ![Login with Username](Screenshots/log-in-with-username-pass.jpg)  
 - **Facial Recognition**  
-  ![Login with FaceID](log-in-faceid.jpg)  
+  ![Login with FaceID](Screenshots/log-in-faceid.jpg)  
 
 #### Student Dashboard
 - **Personal Information**  
-  ![Student Info](stu-info.jpg)  
+  ![Student Info](Screenshots/stu-info.jpg)  
 - **Courses**  
-  ![Student Courses](stu-courses.jpg)  
+  ![Student Courses](Screenshots/stu-courses.jpg)  
 - **Lectures**  
-  ![Student Lectures](stu-lec.jpg)  
+  ![Student Lectures](Screenshots/stu-lec.jpg)  
 
 #### Professor Dashboard
 - **Professor Overview**  
-  ![Professor UI](doc-ui.jpg)  
+  ![Professor UI](Screenshots/doc-ui.jpg)  
 - **Take Attendance Using FaceID**  
-  ![Attendance by FaceID](doc-take-attendance-by-faceid.jpg)  
+  ![Attendance by FaceID](Screenshots/doc-take-attendance-by-faceid.jpg)  
 - **Courses Management**  
-  ![Professor Courses](doc-courses.jpg)  
+  ![Professor Courses](Screenshots/doc-courses.jpg)  
 - **Add Lecture**  
-  ![Add Lecture](doc-add-lec.jpg)  
+  ![Add Lecture](Screenshots/doc-add-lec.jpg)  
 - **Add Assignment**  
-  ![Add Assignment](doc-add-assignment.jpg)  
+  ![Add Assignment](Screenshots/doc-add-assignment.jpg)  
 
 #### Affairs Dashboard
 - **Affairs Overview**  
-  ![Affairs UI](affairs-ui.jpg)  
+  ![Affairs UI](Screenshots/affairs-ui.jpg)  
 - **Add Professor**  
-  ![Add Professor](affairs-add-doc.jpg)  
+  ![Add Professor](Screenshots/affairs-add-doc.jpg)  
 - **Search for Professor's Courses**  
-  ![Search Professor Courses](affairs-search-doc-courses.jpg)  
+  ![Search Professor Courses](Screenshots/affairs-search-doc-courses.jpg)  
 - **Search for Students**  
-  ![Search Students](affairs-search-stu.jpg)  
+  ![Search Students](Screenshots/affairs-search-stu.jpg)  
 - **Add New Course**  
-  ![Add Course](affairs-add-course.jpg)  
+  ![Add Course](Screenshots/affairs-add-course.jpg)  
 
 ---
 
