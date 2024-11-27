@@ -1,0 +1,52 @@
+﻿@model FacultyWebsite.Models.NewLectureAttendance
+
+@{
+    Layout = "_IndexL.cshtml";
+}
+
+<head>
+
+    <style>
+        .text-danger {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<div style="text-align : center ; font-size:20px ; color : red ;">
+    @ViewData["result"]
+</div>
+
+<div class="container add" id="div2" style="display: block;">
+    <form asp-action="NewLectureAttendance" enctype="multipart/form-data" class="login-form">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h2>Add New Lecture Attendance </h2>
+        <div class="form-group input-group">
+            <label asp-for="CourseNum" class="control-label">Course code</label>
+            <input asp-for="CourseNum" type="text" class="form-control" required />
+            <span asp-validation-for="CourseNum" class="text-danger"></span>
+        </div>
+
+        <div class="form-group input-group">
+            <label asp-for="LectureNum" class="control-label">Lecture Number</label>
+            <input asp-for="LectureNum" type="text" class="form-control" required />
+            <span asp-validation-for="LectureNum" class="text-danger"></span>
+        </div>
+
+        <div class="form-group input-group">
+            <label asp-for="Preiod" class="control-label">Preiod</label>
+            <input asp-for="Preiod" type="text" class="form-control" required />
+            <span asp-validation-for="Preiod" class="text-danger"></span>
+        </div>
+
+        <div class="form-group input-group">
+            <label asp-for="Description" class="control-label">Description</label>
+            <input asp-for="Description" type="text" class="form-control" required />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Add Lecture" id="button" />
+    </form>
+</div>
+

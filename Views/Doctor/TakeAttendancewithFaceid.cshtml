@@ -1,0 +1,113 @@
+﻿@model FacultyWebsite.Models.Faceidtempdata
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Log In Page</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="~/assets/img/KFS_logo.gif" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- JQuery File-->
+    <script src="~/assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/img/KFS_logo.gif" rel="icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In With Face ID</title>
+    <script defer src="~/Face ID/face-api.min.js"></script>
+    <link rel="stylesheet" href="~/Face ID/Afaceid-style.css">
+    <script defer src="~/Face ID/Ascript.js"></script>
+
+</head>
+
+<body>
+
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">Computer science</a></h1>
+            <br>
+            <nav id="navbar" class="navbar">
+
+                <ul>
+                    <li style="margin-right:35px">
+                        <label for="CourseCode" class="Lecdatalabel" >Course Code : </label>
+                        <label id="CourseCode"  class="Lecdata" name="CourseCode">@Model.CoureseNum</label>
+                    </li>
+                    <li>
+                        <label for="Lecture Number" class="Lecdatalabel">Lecture Number : </label>
+                        <label id="Lecnum"  class="Lecdata" name="Lecture Number">@Model.LecNum </label>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        </div>
+    </header>
+    
+    <div class="ttf">
+        <table id="schedule">
+            <tr>
+                <th>   </th>
+                <th>Firest Name</th>
+                <th>Last Name</th>
+                <th>Level</th>
+                <th>Has Course</th>
+
+            </tr>
+        </table>
+    </div>
+
+
+    <video id="video" width="600" height="450" autoplay></video>
+
+    <div class="buttonnnp">
+        <div class="buttonnn" >
+            <a onclick="SaveDataApi()" >Save</>
+        </div>
+        <div class="buttonnn">
+            <a onclick="CancelDataApi()">Cancel</a>
+        </div>
+    </div>
+
+        <!-- Vendor JS Files -->
+        <script src="~/assets/vendor/aos/aos.js"></script>
+        <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="~/assets/js/main.js"></script>
+</body>
+
+</html>

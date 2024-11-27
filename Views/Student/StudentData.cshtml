@@ -1,0 +1,144 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FacultyWebsite.Data
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@inject DBAppContext Context
+
+
+@{
+    Layout = "_Index.cshtml";
+
+}
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userData = Context.Students.FirstOrDefault(x => x.Username == user.UserName);
+    var prev = Context.PreviousCourses.FirstOrDefault(x => x.StudentId == userData.Ssn);
+    var fullanme= userData.Fname + " " + userData.Lname;
+    var department = Context.Departments.FirstOrDefault(x => x.Depnum == userData.Depnum).Depname;
+    var courses = Context.PreviousCourses.Where(x => x.StudentId == userData.Ssn).ToList();
+    var totalHours = 0;
+    foreach (var course in courses)
+    {
+        totalHours += int.Parse(Context.Courses.FirstOrDefault(x => x.Coursenum == course.CourseNum).CreditHuors?.ToString() ?? "0");
+    }
+
+<div class="main-content">
+
+    <div class="row d-flex justify-content-center">
+
+            <div class="col-xl-6 container add" style=" max-width:580px; border-radius:10px">
+                     <div class="col-xl-11col-md-6 circular-div">
+                    <img src="~/Face ID/labels/@user.UserName/1.jpg" alt="Student">
+                     </div>
+
+                     <div class="col-xl-11 col-md-6">
+                         <br>
+                         <h2 align="center" style="color:var(--primary-color) ;font-weight:bold">Your Personal Data</h2>
+                         <br>
+                     </div>
+
+                     <div class="input-group ">
+                         <label for="fname">Full Name</label>
+                    <input type=" text" asp-for="@fullanme" name="fname" readonly>
+                     </div>
+
+                     <div class="input-group ">
+                         <label for="fname">Student Code</label>
+                    <input type="text" name="fname" asp-for="@userData.IdentityId" readonly>
+                     </div>
+
+                     <div class="input-group ">
+                         <label for="fname">SSN</label>
+                    <input type="text" name="fname" asp-for="@userData.Ssn" readonly>
+                     </div>
+
+                     <div class="input-group">
+                         <label for="fname">Username</label>
+                    <input type="text" name="fname" asp-for="@userData.Username" readonly>
+                     </div>
+                    <div class="input-group ">
+                        <label for="Email">Email</label>
+                        <input type="text" name="fname" asp-for="@userData.Email" readonly>
+                    </div>
+
+                     <div class="input-group">
+                         <label for="fname">Department Name</label>
+                    <input type="text" name="fname" asp-for="@department" readonly>
+                     </div>
+
+                     <div class="input-group">
+                         <label for="fname">Level</label>
+                    <input type=" text" name="fname" asp-for="@userData.Level"  readonly>
+                     </div>
+
+                     <div class="input-group ">
+                         <label for="fname">Phone</label>
+                    <input type="text" name="fname" asp-for="@userData.Phone" readonly>
+                     </div>
+                     <div class="input-group ">
+                    <label for="Gpa">GPA</label>
+                    <input type="text" name="fname" asp-for="@userData.Gpa" readonly>
+                     </div>
+                <div class="input-group ">
+                    <label for="fname">Total Studied Hours</label>
+                    <input type="text" name="fname" asp-for="@totalHours" readonly>
+                </div>
+                </div>
+
+            <div class="col-xl- container add" style=" max-width:580px; border-radius:10px">
+                <div class="col-xl-11 col-md-6">
+                </div>
+
+                <div class="col-xl-11 col-md-6">
+                    <br>
+                    <h2 align="center" style="color:var(--primary-color); font-weight: bold;">Your Completed Courses</h2>
+                    <br>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="courses-table">
+                            <thead>
+                                <tr>
+                                    <th style="background-color: var(--fourth-color);text-align:center; color:var(--thirteen-color)">
+                                        Course Name</th>
+                                    <th style="background-color: var(--fourth-color); text-align:center ;color:var(--thirteen-color)">
+                                        Course Hours</th>
+                                    <th style="background-color: var(--fourth-color); text-align:center ;color:var(--thirteen-color)">
+                                        Result</th>
+                                    <th style="background-color: var(--fourth-color); text-align:center ;color:var(--thirteen-color)">
+                                        Degree</th>
+
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var course in courses)
+                                {
+                                    <tr>
+                                        <td style="text-align:center"> @course.CourseName</td>
+                                        <td style="text-align:center">@int.Parse(Context.Courses.FirstOrDefault(x => x.Coursenum == course.CourseNum).CreditHuors?.ToString() ?? "0")</td>
+                                        <td style="text-align:center">@course.Degree</td>
+                                        <td style="text-align:center">@course.Result</td>
+                                    </tr>
+
+
+
+                                }
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </div>
+</div>
+
+
+}

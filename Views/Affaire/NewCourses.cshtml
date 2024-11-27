@@ -1,0 +1,121 @@
+﻿@model FacultyWebsite.Models.NewCourses
+@using Microsoft.AspNetCore.Identity
+@using FacultyWebsite.Data
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@inject DBAppContext Context
+
+
+
+@{
+    Layout = "_Indexs.cshtml";
+}
+
+<div style="text-align : center ; font-size:20px ; color : red ;">
+    @ViewData["result"]
+</div>
+
+<div class="container add" id="div2">
+
+    <form asp-action="NewCourses" method="post" class="login-form">
+        <h2>Search for Student Curent Courses </h2>
+
+        <div class="form-group input-group">
+            <label asp-for="StudentSsn" style="font-size:18px">Search by Student SSN:</label>
+            <input asp-for="StudentSsn" type="text" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Search</button><br />
+    </form>
+
+    <form asp-action="NewCourses" method="post" class="login-form">
+        <br />
+        <hr> <br />
+        <h3 align="center" style="font-size:26px">Add New Course for Student</h3><br />
+
+        <div class="form-group input-group">
+            <label asp-for="NewCourse.Ssn" style="font-size:18px">Student SSN</label>
+            <input asp-for="NewCourse.Ssn" type="text" class="form-control" required />
+        </div>
+        <div class="form-group input-group">
+            <label asp-for="NewCourse.Coursenum" style="font-size:18px">Course Code</label>
+            <input asp-for="NewCourse.Coursenum" type="text" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add</button><br />
+    </form><br />
+    <hr /><br />
+
+
+    @if (Model != null)
+    {
+        <h3 align="center" style="font-size:26px">Student Curent Courses</h3>
+
+        foreach (var item in Model.CurrentStudentCourses)
+        {
+            var course = Context.Courses.FirstOrDefault(x => x.Coursenum == item.Coursenum);
+
+            <div class="table-responsive">
+                <table class="courses-table">
+                    <dl class="row">
+
+                    <thead>
+                        <tr>
+                            <th style="background-color: var(--fourth-color); color:var(--thirteen-color)">Course Code</th>
+                            <th style="background-color: var(--fourth-color); color:var(--thirteen-color)">Course Name</th>
+                            <th style="background-color: var(--fourth-color); color:var(--thirteen-color)">Course Hours</th>
+                        </tr>
+                    </thead>
+
+                    </dl>
+            <dl class="row">
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                    @item.Coursenum
+                            </td>
+                            <td>
+
+                                    @course.Coursename
+                            </td>
+
+                            <td>
+
+                                    @course.CreditHuors
+                            </td>
+
+                        </tr>
+                    </tbody>
+            </dl>
+
+                        </table>
+            </div> 
+
+           
+        }
+
+        <form asp-action="NewCourses" method="post" class="login-form">
+            <br />
+            <hr> <br />
+            <h3 align="center" style="font-size:26px">Delete Curent Course For Student</h3><br />
+
+            <div class="form-group input-group">
+                <label asp-for="ConfirmStudentSsn" style="font-size:18px">Student SSn</label>
+                <input asp-for="ConfirmStudentSsn" type="text" class="form-control" required />
+            </div>
+
+            <div class="form-group input-group">
+                <label asp-for="ConfirmCoursenum" style="font-size:18px">Corse Code</label>
+                <input asp-for="ConfirmCoursenum" type="text" class="form-control" required />
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Delete</button><br />
+        </form>
+    }
+
+
+
+</div>
+

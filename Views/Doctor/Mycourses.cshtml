@@ -1,0 +1,69 @@
+﻿@model FacultyWebsite.Models.Doctor
+
+
+@using Microsoft.AspNetCore.Identity
+@using FacultyWebsite.Data
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@inject DBAppContext Context
+
+@{
+    
+    var user = await UserManager.GetUserAsync(User);
+    var userdata = Context.Doctors.FirstOrDefault(x => x.Ssn == user.SSN);
+    List<Course> dc = new List<Course>();
+    var doctorCourses = Context.DocCourses.Where(x => x.Ssn == user.SSN).ToList();
+    foreach(var item in doctorCourses)
+    {
+        dc.Add(Context.Courses.FirstOrDefault(x => x.Coursenum == item.Coursenum));
+    }
+
+    ViewData["Title"] = "Mycourses";
+    Layout = "_Index.cshtml";
+
+
+
+    <div >
+        <div  class="container add" style=" max-width:700px; border-radius:20px; display:flex">
+
+            <h1 >Hi Dr. @userdata.Fname @userdata.Lname</h1>
+
+        </div>
+    </div>
+
+<div>
+     <div class="container add">
+     <h2 align="center">Your Courses</h2>
+        <form a method="post" class="login-form">
+
+        <div class="table-responsive">
+            <table class="courses-table">
+                <thead>
+                    <tr>
+                        <th style="background-color: var(--fourth-color); color:var(--thirteen-color)">Course Name</th>
+                        <th style="background-color: var(--fourth-color); color:var(--thirteen-color)">Credit Hours</th>
+                        <th style="background-color: var(--fourth-color); color:var(--thirteen-color)">Course Level</th>
+                    </tr>
+                </thead>
+
+        @foreach(var item in dc)
+        {
+
+                    <tbody>
+                        <tr>
+                            <td>@item.Coursename</td>
+                            <td>@item.CreditHuors</td>
+                            <td>@item.CourseLevel</td>
+                            </tr>
+                    </tbody>
+        }    
+        
+        </table>
+     </div>
+        </form>
+<div>
+                <button asp-action="Index"> <a href="~/Doctor/index" style="color:#fff">Back to List</a></button>
+</div>
+</div>
+</div>
+}

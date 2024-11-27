@@ -1,0 +1,647 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FacultyWebsite.Data
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Faculty of Computer Science Management System </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/assets/img/KFS_logo.gif" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- JQuery File-->
+    <script src="~/assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a>Computer Science</a></h1>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="~/#hero">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="~/#about">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="~/#content">Content</a></li>
+                    <li><a class="nav-link scrollto" href="~/#team">Team</a></li>
+
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li><a class="getstarted scrollto" href="../../Login/Logout">Log Out</a></li>
+                    }
+                    else
+                    {
+                        <li><a class="getstarted scrollto" href="../../Login/Login">Log IN</a></li>
+                    }
+                    @{
+
+                        if (SignInManager.IsSignedIn(User))
+                        {
+
+                            var user = await UserManager.GetUserAsync(User);
+                            var roles = await UserManager.GetRolesAsync(user);
+
+                            Console.WriteLine(string.Join(", ", roles));
+
+                            @if (roles.Contains("Student", StringComparer.OrdinalIgnoreCase))
+                            {
+                                <li><a class="getstarted scrollto" href="../../Student/Index">Account</a></li>
+                            }
+                            else if (roles.Contains("Affaire", StringComparer.OrdinalIgnoreCase))
+                            {
+                                <li><a class="getstarted scrollto" href="../../Affaire/index">Account</a></li>
+
+                            }
+                            else if (roles.Contains("Doctor", StringComparer.OrdinalIgnoreCase))
+                            {
+                                <li><a class="getstarted scrollto" href="../../Doctor/index">Account</a></li>
+                            }
+                            else
+                            {
+                                <li><a class="getstarted scrollto" href="">no roles</a></li>
+
+                            }
+
+
+
+                        }
+
+
+                    }
+
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <img src="~/assets/img/moon.png" id="icon">
+
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h1>Our Faculty Management System</h1>
+                    <h2>
+                        Faculty of Computer and Information Kafr El-Sheisk University Official Educational System
+                        Website
+                    </h2>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="~/assets/img/hero-img.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2 style="color:var(--primary-color)">Computer and Information KFS</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            The College of Computer and Information Sciences – Kafrelsheikh University (bachelor's
+                            degree) has been approved for:
+
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> The academic year 2015/2016</li>
+                            <li><i class="ri-check-double-line"></i> Kafrelsheikh University (bachelor's) degree</li>
+
+                            <li>
+                                <i class="ri-check-double-line"></i> The internal regulations attached to the Faculty of
+                                Computer and Information Sciences
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            Faculty of Computers and Information at Kafrelsheikh University seeks to raise the level of
+                            education and scientific
+                            research in computers and information technology to achieve excellence and innovation in
+                            scientific research and
+                            community service at the local and regional levels.
+
+                        </p>
+                        <a href="https://kfs.edu.eg/engcomputers/" class="btn-learn-more">Know More</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+        <!-- ======= Content Section ======= -->
+        <section id="content" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Content</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box" style="border-radius:10px">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="#department">Departments</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div class="icon-box" style="border-radius:10px">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="#ch">Credit Hours Regulation</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div class="icon-box" style="border-radius:10px">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="#mission">Faculty Mission</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div class="icon-box" style="border-radius:10px">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="#objectives">Faculty Objectives</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End content Section -->
+
+        <!-- ======= departemnt Section ======= -->
+        <section id="department" class="services section-bg" style="background-color:var(--thirteen-color)">
+            <div class=" container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2 style="color:var(--primary-color)">Departments</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="https://kfs.edu.eg/engcomputers/index_dep.aspx?dep=852">Computer Science (CS)</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4><a href="https://kfs.edu.eg/engcomputers/index_dep.aspx?dep=854">Information Technology (IT)</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="https://kfs.edu.eg/engcomputers/index_dep.aspx?dep=853">Information System (IS)</a></h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- departemnt Section -->
+
+        <!-- ======= Faculty objectives ======= -->
+        <section id="objectives" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Faculty Objectives</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-1" class="collapsed">
+                                Training technical cadres in various
+                                sectors of the state on computer and information technology </i>
+                            </a>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-2" class="collapsed">
+                                Conduct scientific and applied studies
+                                and researches in
+                                the field of computers and information. <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i>
+                            </a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Primarily those that
+                                    have a direct impact on the integrated development in the community and the
+                                    establishment of specialized research units
+                                    in different branches of computers and information
+                                </p>
+                            </div>
+                        </li>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-3" class="collapsed">
+                                Providing scientific and technical
+                                consultations and assistance to the bodies and entities that use computer and
+                                information technology and are interested in manufacturing, decision-making and support
+                                .</i>
+                            </a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-4" class="collapsed">
+                                Raise and deepen awareness in the
+                                community in order to use computers and information technology in different sectors
+                                and institutions of the state, and raise the efficiency of their use.</i>
+                            </a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-5" class="collapsed">
+                                Conferences organization and scientific
+                                meetings held with the aim of improving the educational level and deepen the
+                                scientific concept among the specialized cadres.</i>
+                            </a>
+                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-6" class="collapsed">
+                                Ability to use skills, technologies
+                                and modern information technology necessary to design and build software.</i>
+                            </a>
+                            <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-7" class="collapsed">
+                                Held scientific agreements with the
+                                corresponding bodies and institutions at the local, regional and global level, with
+                                the aim of exchanging views and conducting researches related to computer and
+                                information specialties.
+                                </i>
+                            </a>
+                            <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-8" class="collapsed">
+                                Providing and strengthening the means of
+                                publishing and scientific research in all fields of specialization.
+                                </i>
+                            </a>
+                            <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-9" class="collapsed">
+                                Establishing advanced specialized units
+                                in different branches of computer and information sciences.
+                                </i>
+                            </a>
+                            <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+                        <li style="background-color:#fff" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-10" class="collapsed">
+                                Participating with the specialized
+                                agencies to develop and localize the various systems and applications.
+                                </i>
+                            </a>
+                            <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section><!--Faculty objectives Section -->
+
+        <!-- ======= Faculty Mission Section ======= -->
+        <section id="mission" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2 style="color:var(--primary-color)">Faculty Mission</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            The mission of the faculty of Computers and Information includes:
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="ri-check-double-line"></i>Building an advanced educational system that is
+                                compatible with the rapid growth in the fields of computers and
+                                information.
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i> Supply the student with assets of knowledge and
+                                scientific research in the areas of computer science, information
+                                technology and the development of the student's personality to make him willing to
+                                innovation and a lover of teamwork
+                                and able to compete locally, regionally and globally.
+                            </li>
+
+                            <li>
+                                <i class="ri-check-double-line"></i> Developing and updating curricula continuously in
+                                line with scientific progress and requirements of the age and needs
+                                of the labor market.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                        <ul>
+                            <li>
+                                <i class="ri-check-double-line"></i>Building an advanced educational system that is
+                                compatible with the rapid growth in the fields of computers and
+                                information.
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i> Raise awareness about the value of continuing
+                                education, the inevitability of self-learning and the importance of
+                                using modern methods in this field.
+
+                            </li>
+
+                            <li>
+                                <i class="ri-check-double-line"></i> Use scientific research as a means to achieve
+                                innovation in the fields of college by studying the economic, commercial
+                                and social importance of the results of scientific research.
+                            </li>
+                            <li><i class="ri-check-double-line"></i> Promote the principles of credibility and ethics.
+
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- faculty mission Section -->
+        <!-- ======= CH Section ======= -->
+        <section id="ch" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3>Credit Hours Regulation</h3>
+                        <p>
+                            credit hours is a way of measuring how much credit a student receives for attending a
+                            course, which corresponds to the
+                            hours per week spent in that course.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle"
+                            href="https://kfs.edu.eg/engcomputers/pdf/181202413285129.pdf">Credit Hours Rules</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- ch Section -->
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Team</h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/team/Ahmed.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Ahmed Abdel-Aziz Fahmy</h4>
+                                <span>Back-End Developer</span>
+                                <p>Computer Vision & Back-End Developer, Computer Vision Head at MSP, Computer
+                                    Vision Vice Head at IEEE.</p>
+                                <div class="social">
+
+                                    <a href="https://x.com/Ahmed_fahmy8308"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://t.me/A7medFahmy8">
+                                        <i class="ri-telegram-fill"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/A7medfahmy8"><i class="ri-facebook-fill"></i></a>
+                                    <a href="https://github.com/Ahmedfahmy8308"><i class="ri-github-fill"></i></a>
+                                    <a href="https://www.linkedin.com/in/ahmed-fahmy-174191260">
+                                        <i class="ri-linkedin-box-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/team/Mohsen.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Mohamed Mohsen Ali</h4>
+                                <span>Back-End Developer</span>
+                                <p>Back-End Developer and Software Fundamentals Head at IEEE.</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/memo_FCI"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://t.me/Mohamedmohsen179">
+                                        <i class="ri-telegram-fill"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/mohamedmohsen179">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="https://github.com/Mohamedmohsen179"><i class="ri-github-fill"></i></a>
+                                    <a href="https://www.linkedin.com/in/mohamed-mohsen-136bbb293/">
+                                        <i class="ri-linkedin-box-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/team/Malak.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Malak Alsayed Ahmed</h4>
+                                <span>DataBase Developer</span>
+                                <p>DataBase & Flutter Developer, Mobile Development Head at IEEE.</p>
+                                <div class="social">
+                                    <a href="https://x.com/malakalsayed18?s=21"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://t.me/malakalsayedahmed">
+                                        <i class="ri-telegram-fill"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/malak.alsaiedahmed?mibextid=LQQJ4d">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="https://github.com/Malak308"><i class="ri-github-fill"></i></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/malak-alsayed-a9ba16304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                                        <i class="ri-linkedin-box-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="~/assets/img/team/Marwa.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Marwa Abdelmonem Eldeeb</h4>
+                                <span>Front-End Developer</span>
+                                <p>Computer Vision & Front-End Developer, Computer Vision Head at IEEE.</p>
+                                <div class="social">
+                                    <a href="~/"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://t.me/m2rwaeldeeb">
+                                        <i class="ri-telegram-fill"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/marwa.abdelmonem.336?mibextid=ZbWKwL">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="https://github.com/MarwaEl-deeb"><i class="ri-github-fill"></i></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/marwa-abdelmonem-940403264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                        <i class="ri-linkedin-box-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Team Section -->
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-9 col-md-6 login-footer">
+                        <h3 class="col-lg-3 col-md-6">Faculty of Computer and Information KFS</h3>
+                        <p>
+                            Al-Guish Street<br>
+                            Kafr El-Sheisk<br>
+                            Egypt <br><br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-social">
+                        <h4>Our Social Networks</h4>
+                        <p>
+                            Follow our official union groups to stay informed of any decisions, timetables, or even your
+                            exam
+                            dates.
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="https://t.me/+Q-M97PHooaoyMDNk" class="telegram"><i
+                                    class="bx bxl-telegram"></i></a>
+                            <a href="https://www.facebook.com/SUFCIKFS?mibextid=LQQJ4d" class="facebook">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>CS KFS</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="~/mailto:fci.kfs@gmail.com"><strong>Khair Awn Team</strong></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+
+</html>

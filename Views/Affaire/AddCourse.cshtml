@@ -1,0 +1,67 @@
+﻿@model FacultyWebsite.Models.AddCourse
+
+@{
+    Layout = "_Indexc.cshtml";
+}
+
+<head>
+
+    <style>.text-danger{color: red;} </style>
+
+</head>
+
+<div style="text-align : center ; font-size:20px ; color : red ;">
+    @ViewData["result"]
+</div>
+
+<div class="container add" id="div2" style="display: block;">
+    <form asp-action="AddCourse" enctype="multipart/form-data" class="login-form">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h2>Add New Course</h2>
+        <div class="form-group input-group">
+            <label asp-for="Coursename" class="control-label">Course name</label>
+            <input asp-for="Coursename" type="text" class="form-control" required />
+            <span asp-validation-for="Coursename" class="text-danger"></span>
+        </div>
+
+        <div class="form-group input-group">
+            <label asp-for="Coursenum" class="control-label">Course Code</label>
+            <input asp-for="Coursenum" type="text" class="form-control" required />
+            <span asp-validation-for="Coursenum" class="text-danger"></span>
+        </div>
+       
+        <div class="form-group input-group">
+            <label asp-for="CreditHuors" class="control-label">Credit Hours</label>
+            <input asp-for="CreditHuors" type="text" class="form-control" required />
+            <span asp-validation-for="CreditHuors" class="text-danger"></span>
+        </div>
+
+        <div class="form-group input-group">
+            <label asp-for="level" class="control-label">Level</label>
+            <input asp-for="level" type="text" class="form-control" required />
+            <span asp-validation-for="level" class="text-danger"></span>
+        </div>
+
+        
+        <div class="form-group input-group">
+            <label asp-for="CourseDescription" class="control-label">Course Description</label>
+            <input asp-for="CourseDescription" type="text" class="form-control" required />
+            <span asp-validation-for="CourseDescription" class="text-danger"></span>
+        </div>
+
+
+       
+
+        <div class="form-group id">
+            <label asp-for="CourseCover" class="control-label">Course Cover </label>
+            <input type="file" asp-for="CourseCover" class="form-control" accept=".jpg" required /><br />
+            <span asp-validation-for="CourseCover" class="text-danger"></span><br>
+        </div>
+
+        
+
+        <input type="submit" value="Add Course" id="button" />
+    </form>
+</div>
+
+

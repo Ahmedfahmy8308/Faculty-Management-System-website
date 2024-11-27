@@ -1,0 +1,119 @@
+﻿@model FacultyWebsite.Models.UpdateDoctor
+
+@{
+    Layout = "_Indexd.cshtml";
+}
+
+
+
+
+<div class="container add" id="div2" style="display: block;">
+    <form asp-action="UpdateDoctor" method="post" class="login-form">
+        <h2>Search for a Doctor To Update</h2>
+
+        <div class="form-group input-group">
+            <label asp-for="Ssn" style="font-size:18px">Search by SSN:</label>
+            <input asp-for="Ssn" type="text" class="form-control" />
+            <span asp-validation-for="Ssn" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button><br />
+    </form>
+
+
+    @if (Model != null)
+    {
+        <form asp-action="UpdateDoctor">
+        <div>
+            <br />
+            <hr> <br />
+                <h2 align="center">Doctor Data</h2>
+
+            <dl class="row ">
+                <dt class="col-sm-2 input-group">
+                        <label asp-for="Fname" style="font-size:18px ; color : green">First Name </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Fname" type="text" class="form-control" requigreen />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                        <label asp-for="Lname" style="font-size:18px ; color : green"> Last Name </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                        <input asp-for="Lname" type="text" class="form-control" requigreen />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Ssn" style="font-size:18px">Doctor SSN </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Ssn" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Email" style="font-size:18px">@Html.DisplayNameFor(model => model.Email)</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Email" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Password" style="font-size:18px">@Html.DisplayNameFor(model => model.Password)</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Password" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Username" style="font-size:18px">Username </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Username" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Phone" style="font-size:18px ; color : green"> Phone </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                        <input asp-for="Phone" type="text" class="form-control" requigreen />
+                </dd>
+
+
+                
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Id" style="font-size:18px">ID</label>
+                </dt>
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Id" type="text" class="form-control" readonly />
+                </dd>
+
+
+            <hr /><br />
+            <h3>Are you sure you want to Update this Doctor?</h3><br />
+
+            
+                <div class="form-group input-group">
+                    <label asp-for="confirmUsername">Enter Username for confirm:</label>
+                    <input asp-for="confirmUsername" type="text" class="form-control" requigreen />
+                    <span asp-validation-for="confirmUsername" class="text-danger"></span>
+                </div>
+                <br><input type="submit" value="Update" class="btn btn-danger" id="button" />
+            <div/>
+        
+        </form>
+    }
+
+</div>
+
+<div style="text-align : center ; font-size:20px ; color : red ;">
+    @ViewData["result"]
+</div>
+

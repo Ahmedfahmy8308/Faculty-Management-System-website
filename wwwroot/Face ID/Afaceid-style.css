@@ -1,0 +1,83 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+canvas {
+    position: fixed;
+    right: 5%;
+    top: 20%;
+}
+
+video {
+    box-shadow: 0px 2px 15px rgba(14, 13, 13, 0.641);
+    position: fixed;
+    right: 5%;
+    top: 20%;
+}
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.ttf {
+    width: 40%;
+    border-collapse: collapse;
+    position: fixed;
+    left: 70px;
+    top: 150px;
+    height: 60%;
+    overflow-y: auto;
+}
+.Lecdata {
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue
+}
+.Lecdatalabel {
+    font-size: 21px;
+    font-weight: 800;
+    color: aliceblue
+}
+
+.buttonnn {
+    color: white;
+    margin-right: 0px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    white-space: nowrap;
+    transition: 0.3s;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    background-color: #37517e;
+    width: 70px;
+    text-align: center;
+    height: 40px;
+    width: 100PX;
+    margin-right: 20px;
+    padding-top: 6px;
+}
+.buttonnn a{
+    color: white;
+    text-decoration: none;
+}
+.buttonnnp{
+    position: fixed;
+    left:15%;
+    top: 88%;
+
+
+}

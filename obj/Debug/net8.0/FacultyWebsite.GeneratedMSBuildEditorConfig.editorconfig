@@ -1,0 +1,223 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FacultyWebsite
+build_property.RootNamespace = FacultyWebsite
+build_property.ProjectDir = E:\2023-2024\Faculty-Management-System\FacultyWebsite\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = E:\2023-2024\Faculty-Management-System\FacultyWebsite
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxBZGRDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/AddDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxBZGREb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/AddStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxBZGRTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/Course.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/DeleteCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxEZWxldGVDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/DeleteDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxEZWxldGVEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/DeleteStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxEZWxldGVTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/Doctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/DoctorCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxEb2N0b3JDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/NewCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxOZXdDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/PreviousCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxQcmV2aW91c0NvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/SearchCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxTZWFyY2hDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/SearchDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxTZWFyY2hEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/SearchStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxTZWFyY2hTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/Student.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/UpdateDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxVcGRhdGVEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/UpdateStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxVcGRhdGVTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/_indexc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxfaW5kZXhjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/_indexd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxfaW5kZXhkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Affaire/_indexs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmYWlyZVxfaW5kZXhzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/AddAssignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEFkZEFzc2lnbm1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/AddLecture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEFkZExlY3R1cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/AttendanceManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEF0dGVuZGFuY2VNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/CourseManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXENvdXJzZU1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/DoctorData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERvY3RvckRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/Mycourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXE15Y291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/NewLectureAttendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXE5ld0xlY3R1cmVBdHRlbmRhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/SearchLectureAttendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFNlYXJjaExlY3R1cmVBdHRlbmRhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/TakeAttendancewithFaceid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFRha2VBdHRlbmRhbmNld2l0aEZhY2VpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/_Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXF9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Doctor/_IndexL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXF9JbmRleEwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/FaceId/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjZUlkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Home/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Student/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Student/StudentData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Student/_Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxfSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/2023-2024/Faculty-Management-System/FacultyWebsite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-22qu278u0m

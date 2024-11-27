@@ -1,0 +1,689 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FacultyWebsite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FacultyWebsite.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\Digital\\Cover\\Digital.jpg",
+      "PackagePath": "staticwebassets\\Books\\Digital\\Cover\\Digital.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\Math0\\Cover\\Math0.jpg",
+      "PackagePath": "staticwebassets\\Books\\Math0\\Cover\\Math0.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\Math1\\Cover\\Math1.jpg",
+      "PackagePath": "staticwebassets\\Books\\Math1\\Cover\\Math1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\Oop\\Assignments\\2.pdf",
+      "PackagePath": "staticwebassets\\Books\\Oop\\Assignments\\2.pdf"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\Oop\\Cover\\Oop.jpg",
+      "PackagePath": "staticwebassets\\Books\\Oop\\Cover\\Oop.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\Oop\\lectures\\1.pdf",
+      "PackagePath": "staticwebassets\\Books\\Oop\\lectures\\1.pdf"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\is\\lectures\\2.pdf",
+      "PackagePath": "staticwebassets\\Books\\is\\lectures\\2.pdf"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\it\\Cover\\it.jpg",
+      "PackagePath": "staticwebassets\\Books\\it\\Cover\\it.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\it\\lectures\\1.pdf",
+      "PackagePath": "staticwebassets\\Books\\it\\lectures\\1.pdf"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Books\\wep\\Cover\\wep.jpg",
+      "PackagePath": "staticwebassets\\Books\\wep\\Cover\\wep.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\Afaceid-style.css",
+      "PackagePath": "staticwebassets\\Face ID\\Afaceid-style.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\Ascript.js",
+      "PackagePath": "staticwebassets\\Face ID\\Ascript.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\face-api.min.js",
+      "PackagePath": "staticwebassets\\Face ID\\face-api.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\faceid-style.css",
+      "PackagePath": "staticwebassets\\Face ID\\faceid-style.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\labels\\AhmedFahmy\\1.jpg",
+      "PackagePath": "staticwebassets\\Face ID\\labels\\AhmedFahmy\\1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\labels\\AmrAbohany5\\1.jpg",
+      "PackagePath": "staticwebassets\\Face ID\\labels\\AmrAbohany5\\1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\labels\\MaiRamdan\\1.jpg",
+      "PackagePath": "staticwebassets\\Face ID\\labels\\MaiRamdan\\1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\labels\\MohamedMohsen\\1.jpg",
+      "PackagePath": "staticwebassets\\Face ID\\labels\\MohamedMohsen\\1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\labels\\malakahmed\\1.jpg",
+      "PackagePath": "staticwebassets\\Face ID\\labels\\malakahmed\\1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\labels\\marewAbdelmonem\\1.jpg",
+      "PackagePath": "staticwebassets\\Face ID\\labels\\marewAbdelmonem\\1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\age_gender_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\age_gender_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\age_gender_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_expression_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_expression_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\face_expression_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_landmark_68_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_landmark_68_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\face_landmark_68_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_landmark_68_tiny_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_landmark_68_tiny_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\face_landmark_68_tiny_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_recognition_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_recognition_model-shard2",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\face_recognition_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\face_recognition_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\mtcnn_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\mtcnn_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\mtcnn_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\script.js",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\script.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\ssd_mobilenetv1_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\ssd_mobilenetv1_model-shard2",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\ssd_mobilenetv1_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\ssd_mobilenetv1_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\tiny_face_detector_model-shard1",
+      "PackagePath": "staticwebassets\\Face ID\\mod"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\mod\\tiny_face_detector_model-weights_manifest.json",
+      "PackagePath": "staticwebassets\\Face ID\\mod\\tiny_face_detector_model-weights_manifest.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\Face ID\\script.js",
+      "PackagePath": "staticwebassets\\Face ID\\script.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\4039741.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\4039741.webp"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\4615188.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\4615188.webp"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\KFS.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\KFS.gif"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\KFS_logo.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\KFS_logo.gif"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\Mohsen_CS.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\Mohsen_CS.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\Mohsen_CS2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\Mohsen_CS2.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\Screenshot 2024-05-06 042109.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Screenshot 2024-05-06 042109.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\book2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\book2.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\clients\\client-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clients\\client-1.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\clients\\client-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clients\\client-2.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\clients\\client-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clients\\client-3.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\clients\\client-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clients\\client-4.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\clients\\client-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clients\\client-5.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\clients\\client-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clients\\client-6.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\courses.png",
+      "PackagePath": "staticwebassets\\assets\\img\\courses.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\email.png",
+      "PackagePath": "staticwebassets\\assets\\img\\email.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\hero-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero-img.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\hero2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero2.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\moon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\moon.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\pass.png",
+      "PackagePath": "staticwebassets\\assets\\img\\pass.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-2.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-3.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-4.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-5.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-6.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-7.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-8.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-9.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-details-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-details-1.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-details-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-details-2.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\portfolio\\portfolio-details-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-details-3.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\sun.png",
+      "PackagePath": "staticwebassets\\assets\\img\\sun.png"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\team\\Ahmed.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\Ahmed.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\team\\Malak.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\Malak.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\team\\Marwa.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\Marwa.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\img\\team\\Mohsen.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\Mohsen.jpg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\js\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\aos\\aos.cjs.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.cjs.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\aos\\aos.esm.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.esm.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\aos\\aos.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\css\\animations.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\animations.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\boxicons.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\boxicons.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\css\\transformations.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\transformations.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.eot"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.svg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.woff"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\isotope-layout\\isotope.pkgd.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\php-email-form\\validate.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.eot"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.glyph.json",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.glyph.json"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.less",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.less"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.svg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.symbol.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.symbol.svg"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.ttf"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.woff"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.woff2"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\2023-2024\\Faculty-Management-System\\FacultyWebsite\\wwwroot\\assets\\vendor\\waypoints\\noframework.waypoints.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\waypoints\\noframework.waypoints.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FacultyWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FacultyWebsite.props",
+      "PackagePath": "build\\FacultyWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FacultyWebsite.props",
+      "PackagePath": "buildMultiTargeting\\FacultyWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FacultyWebsite.props",
+      "PackagePath": "buildTransitive\\FacultyWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

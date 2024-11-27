@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FacultyWebsite.Data
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@inject DBAppContext Context
+
+
+@{
+    Layout = "_Index.cshtml";
+
+}
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userData = Context.Doctors.FirstOrDefault(x => x.Username == user.UserName);
+    var fullanme= userData.Fname + " " + userData.Lname;
+    var courses = Context.PreviousCourses.Where(x => x.StudentId == userData.Ssn).ToList();
+
+<div class="main-content">
+
+    <div class="row d-flex justify-content-center">
+
+            <div class="col-xl-6 container add" style=" max-width:580px; border-radius:10px">
+                     <div class="col-xl-11col-md-6 circular-div">
+                    <img src="~/Face ID/labels/@user.UserName/1.jpg" alt="Student">
+                     </div>
+
+                     <div class="col-xl-11 col-md-6">
+                         <br>
+                         <h2 align="center" style="color:var(--primary-color) ;font-weight:bold">Your Personal Data</h2>
+                         <br>
+                     </div>
+
+                     <div class="input-group ">
+                         <label for="fname">Full Name</label>
+                    <input type=" text" asp-for="@fullanme" name="fname" readonly>
+                     </div>
+
+
+                     <div class="input-group ">
+                         <label for="fname">SSN</label>
+                    <input type="text" name="fname" asp-for="@userData.Ssn" readonly>
+                     </div>
+
+                     <div class="input-group">
+                         <label for="fname">Username</label>
+                    <input type="text" name="fname" asp-for="@userData.Username" readonly>
+                     </div>
+                    <div class="input-group ">
+                        <label for="Email">Email</label>
+                        <input type="text" name="fname" asp-for="@userData.Email" readonly>
+                    </div>
+
+
+
+                     <div class="input-group ">
+                         <label for="fname">Phone</label>
+                    <input type="text" name="fname" asp-for="@userData.Phone" readonly>
+                     </div>
+
+               
+            </div>        
+    </div>
+</div>
+
+
+}

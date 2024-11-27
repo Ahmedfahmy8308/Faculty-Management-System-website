@@ -1,0 +1,93 @@
+﻿@model FacultyWebsite.Models.DeleteCourse
+
+@{
+    Layout = "_Indexc.cshtml";
+}
+
+
+
+
+<div class="container add" id="div2" style="display: block;">
+    <form asp-action="DeleteCourse" method="post" class="login-form">
+        <h2>Search for a Course To Delete</h2>
+
+        <div class="form-group input-group">
+            <label asp-for="Coursenum" style="font-size:18px">By Course code:</label>
+            <input asp-for="Coursenum" type="text" class="form-control" />
+            <span asp-validation-for="Coursenum" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button><br />
+    </form>
+
+
+    @if (Model != null)
+    {
+        <div>
+            <br />
+            <hr> <br />
+            <h2 align="center">Course Data</h2>
+
+            <dl class="row ">
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Coursename" style="font-size:18px">Course Name </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Coursename" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Coursenum" style="font-size:18px"> Course Code </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Coursenum" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="level" style="font-size:18px">Level </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="level" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="CreditHuors" style="font-size:18px">Credit Hours</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="CreditHuors" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="CourseDescription" style="font-size:18px">Course Description</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="CourseDescription" type="text" class="form-control" readonly />
+                </dd>
+
+                
+            </dl><br />
+
+            <hr /><br />
+            <h3>Are you sure you want to delete this Course?</h3><br />
+
+            <form asp-action="DeleteCourse">
+                <div class="form-group input-group">
+                    <label asp-for="confirmCoursename">Enter Username for confirm:</label>
+                    <input asp-for="confirmCoursename" type="text" class="form-control" required />
+                    <span asp-validation-for="confirmCoursename" class="text-danger"></span>
+                </div>
+                <br><input type="submit" value="Delete" class="btn btn-danger" id="button" />
+            </form>
+        </div>
+    }
+
+    </div>
+    
+    <div style="text-align : center ; font-size:20px ; color : red ;">
+        @ViewData["result"]
+    </div>
+    

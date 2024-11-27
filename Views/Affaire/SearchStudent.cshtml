@@ -1,0 +1,160 @@
+﻿@model FacultyWebsite.Models.SearchStudent
+
+@{
+    Layout = "_Indexs.cshtml";
+}
+
+
+
+<!-- Delete Student -->
+
+<div class="container add" id="div2" style="display: block;">
+    <form asp-action="SearchStudent" method="post" class="login-form">
+        <h2>Search for a Student with Any of this</h2>
+
+        <div class="form-group input-group">
+            <label asp-for="confirmSsn" style="font-size:18px">By SSN:</label>
+            <input asp-for="confirmSsn" type="text" class="form-control" />
+        </div>
+        <div class="form-group input-group">
+            <label asp-for="confirmPhone" style="font-size:18px">By Phone Number:</label>
+            <input asp-for="confirmPhone" type="text" class="form-control" />
+        </div>
+        <div class="form-group input-group">
+            <label asp-for="confirmId" style="font-size:18px">By Id:</label>
+            <input asp-for="confirmId" type="text" class="form-control" />
+        </div>
+        <div class="form-group input-group">
+            <label asp-for="confirmEmail" style="font-size:18px">By Email:</label>
+            <input asp-for="confirmEmail" type="text" class="form-control" />
+        </div>
+        <div class="form-group input-group">
+            <label asp-for="confirmUsername" style="font-size:18px">By Username:</label>
+            <input asp-for="confirmUsername" type="text" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button><br />
+    </form>
+
+
+    @if (Model != null)
+    {
+        <div>
+            <br />
+            <hr> <br />
+            <h2 align="center">Student Data</h2>
+
+            <dl class="row ">
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Fname" style="font-size:18px">First Name </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Fname" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Lname" style="font-size:18px"> Last Name </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Lname" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Ssn" style="font-size:18px">Student SSN </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Ssn" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Email" style="font-size:18px">@Html.DisplayNameFor(model => model.Email)</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Email" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Password" style="font-size:18px">@Html.DisplayNameFor(model => model.Password)</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Password" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Username" style="font-size:18px">@Html.DisplayNameFor(model => model.Username) </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Username" type="text" class="form-control" readonly />
+                </dd>
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="IdentityId" style="font-size:18px"> Student Code</label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="IdentityId" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Phone" style="font-size:18px"> @Html.DisplayNameFor(model => model.Phone) </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Phone" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Seatnum" style="font-size:18px">Seat Number </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Seatnum" type="number" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Depnum" style="font-size:18px"> Department Number </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Depnum" type="number" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Level" style="font-size:18px"> @Html.DisplayNameFor(model => model.Level) </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Level" type="number" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Gpa" style="font-size:18px">GPA </label>
+                </dt>
+
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Gpa" type="text" class="form-control" readonly />
+                </dd>
+
+                <dt class="col-sm-2 input-group">
+                    <label asp-for="Id" style="font-size:18px">ID</label>
+                </dt>
+                <dd class="col-sm-10 input-group">
+                    <input asp-for="Id" type="text" class="form-control" readonly />
+                </dd>
+
+            </dl><br />
+
+            
+        </div>
+    }
+
+</div>
+
+<div style="text-align : center ; font-size:20px ; color : red ;">
+    @ViewData["result"]
+</div>
+

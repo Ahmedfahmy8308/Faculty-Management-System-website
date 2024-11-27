@@ -1,0 +1,48 @@
+﻿@model FacultyWebsite.Models.Addlecture
+
+@{
+    Layout = "_Index.cshtml";
+}
+
+<head>
+
+    <style>
+        .text-danger {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<div style="text-align : center ; font-size:20px ; color : red ;">
+    @ViewData["result"]
+</div>
+
+<div class="container add" id="div2" style="display: block;">
+    <form asp-action="Addlecture" enctype="multipart/form-data" class="login-form">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h2>Add New Lecture </h2>
+        <div class="form-group input-group">
+            <label asp-for="Coursenum" class="control-label">Course code</label>
+            <input asp-for="Coursenum" type="text" class="form-control" required />
+            <span asp-validation-for="Coursenum" class="text-danger"></span>
+        </div>
+
+        <div class="form-group input-group">
+            <label asp-for="LecNum" class="control-label">Lecture Number</label>
+            <input asp-for="LecNum" type="text" class="form-control" required />
+            <span asp-validation-for="LecNum" class="text-danger"></span>
+        </div>
+
+        <div class="form-group id">
+            <label asp-for="LecFile" class="control-label">Lecture Pdf </label>
+            <input type="file" asp-for="LecFile" class="form-control" accept=".pdf" required /><br />
+            <span asp-validation-for="LecFile" class="text-danger"></span><br>
+        </div>
+
+
+
+        <input type="submit" value="Add Lecture" id="button" />
+    </form>
+</div>
+

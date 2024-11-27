@@ -1,0 +1,151 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FacultyWebsite.Data
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@inject DBAppContext Context
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Faculty of Computer Science Management System Doctors Section</title>
+
+    <!-- Favicons -->
+    <link href="~/assets/img/KFS_logo.gif" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Computer Science</span>
+            </div>
+            </i> <i class="bx bx-menu" id="btn"></i>
+        </div>
+
+        <div class="user">
+
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+
+                var _user = await UserManager.GetUserAsync(User);
+                var _userData = Context.Doctors.FirstOrDefault(x => x.Username == _user.UserName);
+                <img src="~/Face ID/labels/@_user.UserName/1.jpg" alt="me" class="circular-div2">
+                <div>
+                    <p class="bold">Hello! DR : @_userData.Fname </p>
+                </div>
+            }
+
+
+        </div>
+        <hr>
+        <ul>
+
+            <li style="height:53px">
+                <a href="../../Doctor/NewLectureAttendance" onclick="showDiv(1)">
+                    <i class="bx bx-data"></i>
+                    <span class="nav-item">New_Attendance </span>
+                </a>    
+                <span class="tooltip">New_Attendance </span>
+            </li>
+            <li style="height:53px">
+                <a href="../../Doctor/SearchLectureAttendance" onclick="showDiv(1)">
+                    <i class="bx bx-data"></i>
+                    <span class="nav-item">Search_Attendance </span>
+                </a>
+                <span class="tooltip">Search_Attendance </span>
+            </li>
+
+           
+
+            <li>
+                <a href="~/Doctor/index">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Exit</span>
+                </a>
+                <span class="tooltip">Exit</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+
+      
+        @RenderBody()
+        
+
+    <script src="~/assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/assets/js/main.js"></script>
+</body>
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+    function showDiv(divNum) {
+        document.querySelectorAll('.content').forEach(function (div) {
+            div.style.display = 'none';
+        });
+        hideAllContent();
+        document.getElementById('div' + divNum).style.display = 'block';
+
+        localStorage.setItem('lastClickedButton', divNum);
+    }
+
+
+
+    /* Dark theme */
+    const link = document.getElementById('theme');
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.body.classList.toggle('light-theme');
+        document.body.classList.toggle('dark-theme');
+        const iconElement = this.querySelector('i');
+        if (iconElement.classList.contains('bxs-moon')) {
+            iconElement.classList.replace('bxs-moon', 'bxs-sun'); // Change the icon
+        } else {
+            iconElement.classList.replace('bxs-sun', 'bxs-moon'); // Change it back to the original icon
+        }
+    });
+
+</script>
+
+</html>
+
+
+   
+
