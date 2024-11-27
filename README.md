@@ -1,7 +1,6 @@
-# **University Management System**
-
+# **Faculty Management System**
 ### **Overview**
-The **University Management System** is a comprehensive platform built to streamline university operations by automating administrative, academic, and student activities. It leverages modern technologies such as facial recognition for login and attendance and supports role-based functionalities for students, professors, and affairs staff.
+The **Faculty Management System** is a comprehensive platform built to streamline university operations by automating administrative, academic, and student activities. It leverages modern technologies such as facial recognition for login and attendance and supports role-based functionalities for students, professors, and affairs staff.
 
 The system is developed using **.NET Core MVC** to provide a robust, maintainable, and scalable web application.
 
