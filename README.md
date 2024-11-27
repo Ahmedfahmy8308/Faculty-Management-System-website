@@ -53,45 +53,46 @@ The system is developed using **.NET Core MVC** to provide a robust, maintainabl
 ### **Screenshots**
 
 #### Homepage
-![Homepage](Screenshots/website-home-page.jpg)
+<img src="Screenshots/website-home-page.jpg" alt="Homepage" width="600">
 
 #### Login
 - **Username & Password**  
-  ![Login with Username](Screenshots/log-in-with-username-pass.jpg)  
+  <img src="Screenshots/log-in-with-username-pass.jpg" alt="Login with Username" width="600">  
 - **Facial Recognition**  
-  ![Login with FaceID](Screenshots/log-in-faceid.jpg)  
+  <img src="Screenshots/log-in-faceid.jpg" alt="Login with FaceID" width="600">  
 
 #### Student Dashboard
 - **Personal Information**  
-  ![Student Info](Screenshots/stu-info.jpg)  
+  <img src="Screenshots/stu-info.jpg" alt="Student Info" width="600">  
 - **Courses**  
-  ![Student Courses](Screenshots/stu-courses.jpg)  
+  <img src="Screenshots/stu-courses.jpg" alt="Student Courses" width="600">  
 - **Lectures**  
-  ![Student Lectures](Screenshots/stu-lec.jpg)  
+  <img src="Screenshots/stu-lec.jpg" alt="Student Lectures" width="600">  
 
 #### Professor Dashboard
 - **Professor Overview**  
-  ![Professor UI](Screenshots/doc-ui.jpg)  
+  <img src="Screenshots/doc-ui.jpg" alt="Professor UI" width="600">  
 - **Take Attendance Using FaceID**  
-  ![Attendance by FaceID](Screenshots/doc-take-attendance-by-faceid.jpg)  
+  <img src="Screenshots/doc-take-attendance-by-faceid.jpg" alt="Attendance by FaceID" width="600">  
 - **Courses Management**  
-  ![Professor Courses](Screenshots/doc-courses.jpg)  
+  <img src="Screenshots/doc-courses.jpg" alt="Professor Courses" width="600">  
 - **Add Lecture**  
-  ![Add Lecture](Screenshots/doc-add-lec.jpg)  
+  <img src="Screenshots/doc-add-lec.jpg" alt="Add Lecture" width="600">  
 - **Add Assignment**  
-  ![Add Assignment](Screenshots/doc-add-assignment.jpg)  
+  <img src="Screenshots/doc-add-assignment.jpg" alt="Add Assignment" width="600">  
 
 #### Affairs Dashboard
 - **Affairs Overview**  
-  ![Affairs UI](Screenshots/affairs-ui.jpg)  
+  <img src="Screenshots/affairs-ui.jpg" alt="Affairs UI" width="600">  
 - **Add Professor**  
-  ![Add Professor](Screenshots/affairs-add-doc.jpg)  
+  <img src="Screenshots/affairs-add-doc.jpg" alt="Add Professor" width="600">  
 - **Search for Professor's Courses**  
-  ![Search Professor Courses](Screenshots/affairs-search-doc-courses.jpg)  
+  <img src="Screenshots/affairs-search-doc-courses.jpg" alt="Search Professor Courses" width="600">  
 - **Search for Students**  
-  ![Search Students](Screenshots/affairs-search-stu.jpg)  
+  <img src="Screenshots/affairs-search-stu.jpg" alt="Search Students" width="600">  
 - **Add New Course**  
-  ![Add Course](Screenshots/affairs-add-course.jpg)  
+  <img src="Screenshots/affairs-add-course.jpg" alt="Add Course" width="600">  
+
 
 ---
 
