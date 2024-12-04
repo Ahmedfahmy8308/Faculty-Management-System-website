@@ -113,9 +113,4 @@ The system is developed using **.NET Core MVC** to provide a robust, maintainabl
 
 ---
 
-### **Setup Instructions**
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/university-management-system.git
-   cd university-management-system
